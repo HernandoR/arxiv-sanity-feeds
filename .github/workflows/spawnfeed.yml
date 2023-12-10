@@ -91,10 +91,11 @@ jobs:
         with:
           artifacts: feeds/
           # token: ${{ secrets.GITHUB_TOKEN }}
-          # tag: latest
+          tag: default
           allowUpdates: true
           artifactErrorsFailBuild: true
           body: ${{ env.BUILD_DATE }}
+          commit: ${{ github.sha}}
 
 
     
